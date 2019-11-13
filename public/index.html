@@ -1,0 +1,32 @@
+<html><head>
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="C:\Users\vivek\Desktop\assn\inde.css" rel="stylesheet">
+</head><body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script >
+    var base_convert = function(number, initial_base, change_base) {
+    if ((initial_base && change_base) <2 || (initial_base && change_base)>36)
+     return 'Base between 2 and 36';
+    
+     return parseInt(number + '', initial_base)
+     .toString(change_base);
+ }
+    function convert(t,b){
+     var x=document.getElementById(t).value;
+ if(x=='')
+  document.getElementById('hexa').value="";
+  else
+  document.getElementById('hexa').value=base_convert(x,b,16);
+ document.getElementById('octal').value=base_convert(x,b,8)
+ document.getElementById('binary').value=base_convert(x,b,2)
+ document.getElementById('decimal').value=base_convert(x,b,10)
+ }
+ </script><div class="container h-100  align-items-center " id="bg">
+<input oninput="convert('binary',2)" type="text" id="binary" class="form-control" placeholder="binary"><br>
+<input oninput="convert('decimal',10)" type="text" id="decimal"class="form-control"  placeholder="decimal"><br>
+<input oninput="convert('octal',8)"   type="text" id="octal" class="form-control" placeholder="octal"><br>
+<input oninput="convert('hexa',16)" type="text" id="hexa"class="form-control"  placeholder="hexadecimal"><br>
+</div>
+</body></html>

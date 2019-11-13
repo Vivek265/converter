@@ -1,0 +1,27 @@
+bg{
+    background: linear-gradient(103deg, rgb(0, 72, 112) 0%, rgb(46, 140, 140) 100%);
+    margin-top: 100px;
+    width: 750px;
+    margin-bottom: 100px;
+    height: 370px;;
+
+}
+body{ background: linear-gradient(103deg, rgb(0, 72, 112) 0%, rgb(46, 140, 140) 100%);
+
+}
+#bg{
+
+    margin-top: 100px;
+    position: relative;
+    left: 30%;
+    
+}
+.form-control{
+    margin-top: 10px;
+    width:30%;
+    padding: 5px;
+    background: transparent;
+    border-color:white;
+    border-radius: 10px;
+    color: white;
+}
