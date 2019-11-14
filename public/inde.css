@@ -51,7 +51,7 @@ body{ background: linear-gradient(103deg, rgb(0, 72, 112) 0%, rgb(46, 140, 140) 
     
         margin-top: 100px;
         position: relative;
-        left: 22%;
+        left: 20.5%;
         
     }
     .form-control{
@@ -76,7 +76,7 @@ body{ background: linear-gradient(103deg, rgb(0, 72, 112) 0%, rgb(46, 140, 140) 
     
     #binary,#decimal,#hexa,#octal{
         margin-top: 10px;
-        width:45%;
+        width:50%;
         padding: 7px;
         background: transparent;
         border:2px solid whitesmoke;
