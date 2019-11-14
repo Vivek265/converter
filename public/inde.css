@@ -1,11 +1,4 @@
-bg{
-    background: linear-gradient(103deg, rgb(0, 72, 112) 0%, rgb(46, 140, 140) 100%);
-    margin-top: 100px;
-    width: 750px;
-    margin-bottom: 100px;
-    height: 370px;;
-
-}
+@media only screen and (min-width: 768px) {
 body{ background: linear-gradient(103deg, rgb(0, 72, 112) 0%, rgb(46, 140, 140) 100%);
 
 }
@@ -49,3 +42,49 @@ body{ background: linear-gradient(103deg, rgb(0, 72, 112) 0%, rgb(46, 140, 140) 
 #datatype{
     color: white;
 }
+}
+@media only screen and (max-width: 760px) {
+    body{ background: linear-gradient(103deg, rgb(0, 72, 112) 0%, rgb(46, 140, 140) 100%);
+    
+    }
+    #bg{
+    
+        margin-top: 100px;
+        position: relative;
+        left: 30%;
+        
+    }
+    .form-control{
+        margin-top: 10px;
+        width:30%;
+        padding: 5px;
+        background: transparent;
+        border-color:white;
+        border-radius: 10px;
+        
+        
+    }
+    .form-control :active{
+        margin-top: 10px;
+        width:15%;
+        padding: 5px;
+        background: transparent;
+    
+        border-color:white;
+        border-radius: 10px;
+    }
+    
+    #binary,#decimal,#hexa,#octal{
+        margin-top: 10px;
+        width:45%;
+        padding: 7px;
+        background: transparent;
+        border:2px solid whitesmoke;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    #datatype{
+        color: white;
+    }
+    }
